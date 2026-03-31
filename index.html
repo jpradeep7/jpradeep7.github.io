@@ -57,9 +57,12 @@
             color: var(--accent-blue) !important; 
         }
         
-        /* [FIX] Anchor Link Scrolling Offset for Fixed Header */
+        /* [FIX] Bulletproof Scroll Offset for Fixed Header */
+        /* This forces the JS smooth scroll to stop perfectly above the title */
         #about, #clients, #experience, #education, #capabilities, #achievements, #beyond-work {
-            scroll-margin-top: 70px;
+            padding-top: 110px !important; 
+            padding-bottom: 60px !important;
+            margin-top: -20px !important; 
         }
         
         /* Buttons */
@@ -238,7 +241,7 @@
     </section>
     
     <!-- Client Logos -->
-    <section id="clients" style="padding: 60px 0; background: var(--bg-light);">
+    <section id="clients" style="background: var(--bg-light);">
         <div class="container">
             <div class="section-heading text-center" style="margin-bottom: 40px;">
                 <h2 style="font-size: 28px;">A Portfolio of Global Engagements</h2>
@@ -261,7 +264,7 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="experience" style="padding: 80px 0;">
+    <section id="experience" class="experience">
         <div class="section-heading text-center">
             <h2>Professional Experience</h2>
         </div>
@@ -276,8 +279,8 @@
                     <span class="exec-charter">Chartered to drive profitability and operational efficiency across the multi-billion dollar global parts and service business by leveraging data and AI.</span>
                     <ul class="impact-list">
                         <li>Own the P&L and strategic roadmap for a 4-product analytics portfolio that underpins over <strong>$5B in annual sales</strong>, delivering <strong>$3M in annual cost savings</strong> through platform modernization and AI-driven automation.</li>
-                        <li>Architected and launched a 0-to-1 AI-powered self-service analytics platform. This democratized data access, empowering business teams to build their own Power BI dashboards and **accelerating data-driven decision-making**.</li>
-                        <li>Devised and shipped a "namesweep" capability that links disparate fleet customer data to dealer invoices, uncovering critical retention opportunities and **reducing service attrition by 10%**.</li>
+                        <li>Architected and launched a 0-to-1 AI-powered self-service analytics platform. This democratized data access, empowering business teams to build their own Power BI dashboards and <strong>accelerating data-driven decision-making</strong>.</li>
+                        <li>Devised and shipped a "namesweep" capability that links disparate fleet customer data to dealer invoices, uncovering critical retention opportunities and <strong>reducing service attrition by 10%</strong>.</li>
                     </ul>
                 </div>
 
@@ -288,9 +291,9 @@
                     <div class="exec-role">Product Manager – Platform Engineering</div>
                     <span class="exec-charter">Tasked with accelerating digital transformation by creating scalable, reusable engineering platforms and tools for internal development teams.</span>
                     <ul class="impact-list">
-                        <li>Orchestrated the 0-to-1 build of Ford’s Universal Components Library, a reusable React-based front-end platform that became the standard for FordPro, **reducing webpage development time by 75%**.</li>
-                        <li>Pioneered an internal AI assistant for developers. This "web development copilot" served as a one-stop-shop for documentation and code generation, enabling **webpage creation in under 2 minutes**.</li>
-                        <li>Led an end-to-end value chain assessment of our engineering tools, identifying and executing on license optimization opportunities that yielded **$200K in savings** while increasing sprint velocity by 55%.</li>
+                        <li>Orchestrated the 0-to-1 build of Ford’s Universal Components Library, a reusable React-based front-end platform that became the standard for FordPro, <strong>reducing webpage development time by 75%</strong>.</li>
+                        <li>Pioneered an internal AI assistant for developers. This "web development copilot" served as a one-stop-shop for documentation and code generation, enabling <strong>webpage creation in under 2 minutes</strong>.</li>
+                        <li>Led an end-to-end value chain assessment of our engineering tools, identifying and executing on license optimization opportunities that yielded <strong>$200K in savings</strong> while increasing sprint velocity by 55%.</li>
                     </ul>
                     <a href="https://www.fordpro.com/en-us/" target="_blank" class="live-link-btn">View Live Implementation (FordPro) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
                 </div>
@@ -302,9 +305,9 @@
                     <div class="exec-role">Product Manager / Strategy Consultant – Enterprise Platforms</div>
                     <span class="exec-charter">Engaged by Fortune 500 clients to lead digital transformation, automate core business functions, and design new operating models.</span>
                     <ul class="impact-list">
-                        <li>Led product development for an automated banking regulatory reporting product used by major US financial institutions, **reducing manual effort by 65%** and creating **$250K in annual operational savings**.</li>
-                        <li>Launched a data-driven capability assessment product for Fortune 500 clients, which was strategically used to **scale adoption 3x in 12 months** and create an entry point for downstream consulting.</li>
-                        <li>Architected a centralized Enterprise Architecture (EA) platform for a global CPG client to streamline IT governance, **cutting EA review and approval effort by 60%**.</li>
+                        <li>Led product development for an automated banking regulatory reporting product used by major US financial institutions, <strong>reducing manual effort by 65%</strong> and creating <strong>$250K in annual operational savings</strong>.</li>
+                        <li>Launched a data-driven capability assessment product for Fortune 500 clients, which was strategically used to <strong>scale adoption 3x in 12 months</strong> and create an entry point for downstream consulting.</li>
+                        <li>Architected a centralized Enterprise Architecture (EA) platform for a global CPG client to streamline IT governance, <strong>cutting EA review and approval effort by 60%</strong>.</li>
                     </ul>
                 </div>
 
@@ -315,7 +318,7 @@
                     <div class="exec-role">Project Manager – Profit & Loss Forecasting (Internship)</div>
                     <span class="exec-charter">Brought in to solve inconsistencies in financial forecasting for the LATAM market by developing a standardized, data-driven tool.</span>
                     <ul class="impact-list">
-                        <li>Developed and piloted a financial P&L forecasting tool that automated data aggregation, reducing manual effort by 80% and **improving forecast accuracy by a critical 20%**.</li>
+                        <li>Developed and piloted a financial P&L forecasting tool that automated data aggregation, reducing manual effort by 80% and <strong>improving forecast accuracy by a critical 20%</strong>.</li>
                         <li>The success of the LATAM pilot directly informed the global rollout strategy for the tool across other international markets.</li>
                     </ul>
                 </div>
@@ -328,7 +331,7 @@
                     <span class="exec-charter">Developed and maintained mission-critical financial and data platforms for leading clients in the Financial Services and Insurance sectors.</span>
                     <ul class="impact-list">
                         <li>Delivered end-to-end engineering, including front-end development, back-end services, and database management, for complex data platforms.</li>
-                        <li>Led the performance optimization for a pilot stock trading platform, refactoring key components to **improve application responsiveness by 25%** under load.</li>
+                        <li>Led the performance optimization for a pilot stock trading platform, refactoring key components to <strong>improve application responsiveness by 25%</strong> under load.</li>
                     </ul>
                     <a href="https://www.spice-indices.com/idp/#/" target="_blank" class="live-link-btn">View Live Site (S&P Spice) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
                 </div>
@@ -338,7 +341,7 @@
     </section>
 
     <!-- Education & Certifications -->
-    <section id="education" class="education" style="background: var(--bg-light); padding: 80px 0;">
+    <section id="education" class="education" style="background: var(--bg-light);">
         <div class="section-heading text-center">
             <h2>Education & Credentials</h2>
         </div>
@@ -417,7 +420,7 @@
     </section>
 
     <!-- Capabilities & Tech Stack -->
-    <section id="capabilities" class="portfolio" style="padding: 80px 0;">
+    <section id="capabilities" class="portfolio">
         <div class="section-heading text-center">
             <h2>Capabilities & Tech Stack</h2>
         </div>
@@ -476,8 +479,8 @@
         </div>
     </section>
 
-    <!-- Achievements & Awards (NEW CAROUSEL) -->
-    <section id="achievements" class="education" style="background: var(--bg-light); padding: 80px 0;">
+    <!-- Achievements & Awards -->
+    <section id="achievements" class="education" style="background: var(--bg-light);">
         <div class="section-heading text-center">
             <h2>Recognition & Performance</h2>
         </div>
@@ -522,7 +525,7 @@
     </section>
 
     <!-- Beyond Work -->
-    <section id="beyond-work" class="portfolio" style="padding: 80px 0;">
+    <section id="beyond-work" class="portfolio">
         <div class="section-heading text-center">
             <h2>Culture & Beyond The Desk</h2>
         </div>
