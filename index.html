@@ -9,7 +9,6 @@
     
     <title>Pradeep Kumar | Senior Product Manager</title>
     
-    <!-- ACTION: Replace this favicon.png with your own logo in the /assets/logo/ folder -->
     <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
     
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -58,6 +57,11 @@
             color: var(--accent-blue) !important; 
         }
         
+        /* [FIX] Anchor Link Scrolling Offset for Fixed Header */
+        #about, #clients, #experience, #education, #capabilities, #achievements, #beyond-work {
+            scroll-margin-top: 70px;
+        }
+        
         /* Buttons */
         .btn-primary-custom {
             display: inline-block; width: 230px; height: 60px; line-height: 60px; border-radius: 4px;
@@ -98,7 +102,8 @@
         }
         .exec-date { font-size: 14px; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
         .exec-company { font-size: 22px; font-weight: 700; color: var(--primary-blue); margin-bottom: 4px; line-height: 1.2; }
-        .exec-role { font-size: 17px; font-weight: 600; color: var(--accent-blue); margin-bottom: 15px; }
+        .exec-role { font-size: 17px; font-weight: 600; color: var(--accent-blue); margin-bottom: 10px; }
+        .exec-charter { font-style: italic; color: #555; margin-bottom: 15px; display: block; }
         .impact-list { padding-left: 18px; margin-top: 15px; }
         .impact-list li { list-style-type: square; margin-bottom: 12px; }
         .impact-list li strong { color: var(--primary-blue) !important; font-weight: 600; }
@@ -268,10 +273,11 @@
                     <span class="exec-date">Aug 2025 - Present</span>
                     <h3 class="exec-company">Ford Motor Company</h3>
                     <div class="exec-role">Product Line Manager – Service & Parts Analytics</div>
+                    <span class="exec-charter">Chartered to drive profitability and operational efficiency across the multi-billion dollar global parts and service business by leveraging data and AI.</span>
                     <ul class="impact-list">
-                        <li>Lead a 4-product analytics and AI portfolio supporting over <strong>$5B in annual sales</strong> across North America and Europe, delivering <strong>$3M in annual cost savings</strong> through platform modernization and AI automation.</li>
-                        <li>Spearheaded the 0-to-1 launch of an <strong>AI-powered self-service dashboard</strong> platform that enables business teams to create their own Power BI dashboards, significantly improving decision speed.</li>
-                        <li>Built a namesweep capability linking fleet customers to dealer invoices to uncover retention opportunities, <strong>reducing attrition by 10%</strong>.</li>
+                        <li>Own the P&L and strategic roadmap for a 4-product analytics portfolio that underpins over <strong>$5B in annual sales</strong>, delivering <strong>$3M in annual cost savings</strong> through platform modernization and AI-driven automation.</li>
+                        <li>Architected and launched a 0-to-1 AI-powered self-service analytics platform. This democratized data access, empowering business teams to build their own Power BI dashboards and **accelerating data-driven decision-making**.</li>
+                        <li>Devised and shipped a "namesweep" capability that links disparate fleet customer data to dealer invoices, uncovering critical retention opportunities and **reducing service attrition by 10%**.</li>
                     </ul>
                 </div>
 
@@ -280,10 +286,11 @@
                     <span class="exec-date">Sep 2023 - Aug 2025</span>
                     <h3 class="exec-company">Ford Motor Company</h3>
                     <div class="exec-role">Product Manager – Platform Engineering</div>
+                    <span class="exec-charter">Tasked with accelerating digital transformation by creating scalable, reusable engineering platforms and tools for internal development teams.</span>
                     <ul class="impact-list">
-                        <li>Spearheaded the 0-to-1 build of Ford’s Universal Components Library, a reusable React-based front-end platform that <strong>reduced webpage development time by 75%</strong> and accelerated digital delivery.</li>
-                        <li>Built an AI assistant for developers that served as a one-stop web development copilot, enabling <strong>webpage creation in under 2 minutes</strong>.</li>
-                        <li>Conducted an end-to-end value chain assessment and delivered <strong>$200K in savings</strong> through license optimization, while increasing sprint velocity by 55%.</li>
+                        <li>Orchestrated the 0-to-1 build of Ford’s Universal Components Library, a reusable React-based front-end platform that became the standard for FordPro, **reducing webpage development time by 75%**.</li>
+                        <li>Pioneered an internal AI assistant for developers. This "web development copilot" served as a one-stop-shop for documentation and code generation, enabling **webpage creation in under 2 minutes**.</li>
+                        <li>Led an end-to-end value chain assessment of our engineering tools, identifying and executing on license optimization opportunities that yielded **$200K in savings** while increasing sprint velocity by 55%.</li>
                     </ul>
                     <a href="https://www.fordpro.com/en-us/" target="_blank" class="live-link-btn">View Live Implementation (FordPro) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
                 </div>
@@ -293,11 +300,11 @@
                     <span class="exec-date">Jun 2019 - Sep 2023</span>
                     <h3 class="exec-company">Deloitte USI</h3>
                     <div class="exec-role">Product Manager / Strategy Consultant – Enterprise Platforms</div>
+                    <span class="exec-charter">Engaged by Fortune 500 clients to lead digital transformation, automate core business functions, and design new operating models.</span>
                     <ul class="impact-list">
-                        <li>Led the development of an automated banking regulatory reporting product for major US financial institutions, <strong>reducing manual effort by 65%</strong> and delivering <strong>$250K in annual savings</strong>.</li>
-                        <li>Launched a data-driven capability assessment product for Fortune 500 clients, <strong>scaling adoption 3x in 12 months</strong> as a strategic entry point for downstream consulting.</li>
-                        <li>Built a centralized Enterprise Architecture (EA) platform for a global CPG client to streamline IT governance, <strong>cutting EA effort by 60%</strong>.</li>
-                        <li>Assessed value streams across 4 subsidiaries of a leading US energy company, designing an operating model that <strong>reduced annual opex costs by 27%</strong>.</li>
+                        <li>Led product development for an automated banking regulatory reporting product used by major US financial institutions, **reducing manual effort by 65%** and creating **$250K in annual operational savings**.</li>
+                        <li>Launched a data-driven capability assessment product for Fortune 500 clients, which was strategically used to **scale adoption 3x in 12 months** and create an entry point for downstream consulting.</li>
+                        <li>Architected a centralized Enterprise Architecture (EA) platform for a global CPG client to streamline IT governance, **cutting EA review and approval effort by 60%**.</li>
                     </ul>
                 </div>
 
@@ -306,9 +313,10 @@
                     <span class="exec-date">Apr 2018 - Jun 2018</span>
                     <h3 class="exec-company">Unilever, Argentina</h3>
                     <div class="exec-role">Project Manager – Profit & Loss Forecasting (Internship)</div>
+                    <span class="exec-charter">Brought in to solve inconsistencies in financial forecasting for the LATAM market by developing a standardized, data-driven tool.</span>
                     <ul class="impact-list">
-                        <li>Developed & piloted a financial P&L forecasting tool for the LATAM market, reducing manual effort by 80% and <strong>improving forecast accuracy by 20%</strong>.</li>
-                        <li>Shaped the global rollout strategy based on the success of the LATAM pilot.</li>
+                        <li>Developed and piloted a financial P&L forecasting tool that automated data aggregation, reducing manual effort by 80% and **improving forecast accuracy by a critical 20%**.</li>
+                        <li>The success of the LATAM pilot directly informed the global rollout strategy for the tool across other international markets.</li>
                     </ul>
                 </div>
 
@@ -317,9 +325,10 @@
                     <span class="exec-date">Jul 2014 - Jun 2017</span>
                     <h3 class="exec-company">Cognizant Technology Solutions</h3>
                     <div class="exec-role">Full Stack Developer – Financial & Data Platforms</div>
+                    <span class="exec-charter">Developed and maintained mission-critical financial and data platforms for leading clients in the Financial Services and Insurance sectors.</span>
                     <ul class="impact-list">
-                        <li>Delivered end-to-end engineering for financial and data platforms for Finance and Insurance clients.</li>
-                        <li>Led the pilot launch of a stock trading platform, <strong>improving application performance by 25%</strong>.</li>
+                        <li>Delivered end-to-end engineering, including front-end development, back-end services, and database management, for complex data platforms.</li>
+                        <li>Led the performance optimization for a pilot stock trading platform, refactoring key components to **improve application responsiveness by 25%** under load.</li>
                     </ul>
                     <a href="https://www.spice-indices.com/idp/#/" target="_blank" class="live-link-btn">View Live Site (S&P Spice) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
                 </div>
