@@ -89,19 +89,21 @@
         .about-list-icon ul li a { border: none !important; font-size: 20px; }
         
         /* Client Logo Wall */
-        .client-logo-container { text-align: center; }
+        .client-logo-container { text-align: center; margin-top: 50px; }
         .client-logo { display: inline-block; padding: 15px 25px; vertical-align: middle; }
         .client-logo img { max-height: 40px; width: auto; filter: grayscale(100%) opacity(0.6); transition: all 0.3s ease; }
         .client-logo img:hover { filter: grayscale(0%) opacity(1); transform: scale(1.1); }
         
         /* Executive Vertical Timeline */
         .executive-timeline-container { max-width: 950px; margin: 0 auto; padding: 20px 15px; }
-        .exec-timeline-item { position: relative; padding-left: 45px; border-left: 3px solid #d1d9e6; margin-bottom: 55px; }
+        .exec-timeline-item { position: relative; padding-left: 45px; border-left: 3px solid #d1d9e6; margin-bottom: 55px; transition: all 0.3s ease; }
+        .exec-timeline-item:hover { transform: translateX(5px); }
         .exec-timeline-item::before {
             content: ''; position: absolute; left: -12px; top: 0; width: 21px; height: 21px;
             background: #fff; border: 4px solid var(--accent-blue); border-radius: 50%;
-            box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15);
+            box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15); transition: all 0.3s ease;
         }
+        .exec-timeline-item:hover::before { background: var(--accent-blue); }
         .exec-date { font-size: 14px; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
         .exec-company { font-size: 22px; font-weight: 700; color: var(--primary-blue); margin-bottom: 4px; line-height: 1.2; }
         .exec-role { font-size: 17px; font-weight: 600; color: var(--accent-blue); margin-bottom: 10px; }
@@ -137,10 +139,10 @@
         .tech-icon-wrapper i { color: var(--accent-blue); }
         .tech-tools { font-size: 14px; font-weight: 600; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; display: block;}
         
-        /* Awards Carousel Custom Styles */
+        /* Awards Carousel Custom Styles - STRICT IMAGE HEIGHT ENFORCED */
         .award-slide-container { display: flex; flex-wrap: wrap; align-items: center; background: #fff; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eef2f5; }
         .award-img-col { padding: 0; }
-        .award-img-col img { width: 100%; height: 100%; object-fit: cover; min-height: 350px; }
+        .award-img-col img { width: 100%; height: 380px; object-fit: cover; }
         .award-text-col { padding: 40px; }
         .award-text-col h3 { font-size: 24px; font-weight: 700; color: var(--primary-blue); margin-bottom: 15px; }
         
@@ -210,7 +212,8 @@
         <div class="section-heading text-center">
             <h2>Executive Summary</h2>
         </div>
-        <div class="container">
+        <!-- Reduced spacing specifically for this top section -->
+        <div class="container" style="margin-top: 20px;">
             <div class="about-content">
                 <div class="row">
                     <div class="col-sm-7">
@@ -242,8 +245,8 @@
     <!-- Client Logos -->
     <section id="clients" style="background: var(--bg-light);">
         <div class="container">
-            <div class="section-heading text-center" style="margin-bottom: 40px;">
-                <h2 style="font-size: 28px;">A Portfolio of Global Engagements</h2>
+            <div class="section-heading text-center">
+                <h2>A Portfolio of Global Engagements</h2>
             </div>
             <div class="client-logo-container">
                 <div class="client-logo"><img src="assets/images/clients/ford.png" alt="Ford"></div>
@@ -267,7 +270,7 @@
         <div class="section-heading text-center">
             <h2>Professional Experience</h2>
         </div>
-        <div class="container">
+        <div class="container" style="margin-top: 50px;">
             <div class="executive-timeline-container">
                 
                 <!-- Ford PLM -->
@@ -434,7 +437,7 @@
                         </div>
                         <h4>Strategy & Executive Communication</h4>
                         <span class="tech-tools">PowerPoint | Excel | Word</span>
-                        <p>Honed during my tenure as a Strategy Consultant at Deloitte. I leverage PowerPoint for high-stakes executive pitches, Excel for complex financial modeling and business cases, and Word for drafting whitepapers and product guides.</p>
+                        <p>Honed during my tenure as a Strategy Consultant at Deloitte. I leverage PowerPoint for high-stakes executive pitches, Excel for complex financial modelling and business cases, and Word for drafting whitepapers and product guides.</p>
                     </div>
                 </div>
                 
@@ -487,19 +490,17 @@
             
             <div id="awards-carousel" class="owl-carousel owl-theme">
                 
-                <!-- Slide 1: Corporate Excellence (WITH PERSONAL IMAGE) -->
+                <!-- Slide 1: Corporate Excellence -->
                 <div class="item">
                     <div class="award-slide-container">
                         <div class="col-md-5 award-img-col">
-                            <!-- ACTION: Place your impact.jpg file in the assets/images/personal/ folder -->
-                            <img src="assets/images/personal/impact.jpg" alt="Consistent Impact & Leadership">
+                            <img src="assets/images/personal/impact.jpg" alt="Sustained Excellence & Business Impact">
                         </div>
                         <div class="col-md-7 award-text-col">
                             <i class="fa fa-trophy fa-3x" style="color: var(--accent-blue); margin-bottom: 20px;"></i>
-                            <h3>Consistent Impact & Leadership</h3>
-                            <p>I have established a consistent track record of being identified as a top performer in demanding corporate environments.<br><br>
-                            - <strong>Ford Motor Company:</strong> Recognized as a 'Star Performer' for three consecutive years for leadership in digital innovation.<br>
-                            - <strong>Deloitte:</strong> Awarded 'Best Employee' for four consecutive years, reflecting sustained, high-impact client delivery.</p>
+                            <h3>Sustained Excellence & Business Impact</h3>
+                            <p>I have established a consistent track record of delivering outsized results in high-stakes corporate environments.<br><br>
+                            I have been formally recognized for consecutive years at both <strong>Ford Motor Company</strong> and <strong>Deloitte</strong> for spearheading digital innovation, leading cross-functional teams, and consistently exceeding portfolio revenue and delivery targets.</p>
                         </div>
                     </div>
                 </div>
@@ -508,13 +509,13 @@
                 <div class="item">
                     <div class="award-slide-container">
                         <div class="col-md-5 award-img-col">
-                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=800&q=80" alt="Competitive & Strategic Acumen">
+                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=800&q=80" alt="A Foundation of Competitive Excellence">
                         </div>
                         <div class="col-md-7 award-text-col">
                             <i class="fa fa-flag-checkered fa-3x" style="color: var(--accent-blue); margin-bottom: 20px;"></i>
-                            <h3>Proven Strategic & Competitive Acumen</h3>
-                            <p>My drive to win is demonstrated through consistent victories in high-stakes academic and business competitions.<br><br>
-                            During my MBA at IIM Kozhikode, I achieved podium finishes in <strong>National-Level Case Study Competitions, Business Simulations, and Strategy Debates</strong>. This is built on a technical foundation where I won <strong>6 National-Level Programming Competitions</strong> as an engineer.</p>
+                            <h3>A Foundation of Competitive Excellence</h3>
+                            <p>My drive to win is rooted in a history of high-stakes academic and business competitions.<br><br>
+                            I bring the same strategic rigor that secured podium finishes in <strong>National-Level Business Simulations and Case Competitions</strong> at IIM Kozhikode, combined with the technical execution that won <strong>6 National-Level Programming Competitions</strong> as an engineer.</p>
                         </div>
                     </div>
                 </div>
@@ -549,7 +550,7 @@
                     <div class="custom-card">
                         <img src="assets/images/personal/speaking.jpg" alt="Speaking">
                         <h4>Thought Leadership</h4>
-                        <p>I am a passionate public speaker and frequently deliver talks on Product Management and Tech Strategy across various forums. Alongside attending major tech conferences, I was recently invited as a <strong>Special Guest Speaker</strong> at IIM Sambalpur for their annual Product Conclave.</p>
+                        <p>I am a passionate public speaker, frequently delivering talks on Product Management and Tech Strategy. Alongside attending major tech conferences, I was recently invited as a <strong>Special Guest Speaker</strong> at IIM Sambalpur for their annual Product Conclave.</p>
                     </div>
                 </div>
             </div>
