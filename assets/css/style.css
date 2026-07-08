@@ -461,16 +461,19 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 .logo-item {
     flex-shrink: 0;
+    background: var(--bg);
+    isolation: isolate;
 }
 .logo-item img {
     height: 28px;
     width: auto;
-    filter: brightness(0) invert(1);
-    opacity: 0.5;
+    filter: grayscale(1) invert(1);
+    mix-blend-mode: screen;
+    opacity: 0.6;
     transition: opacity var(--transition);
 }
 .logo-item:hover img {
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 /* ================================================================
