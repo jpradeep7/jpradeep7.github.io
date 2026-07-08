@@ -1,604 +1,599 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pradeep Kumar | Senior Product Manager</title>
-    
-    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-    
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootsnav.css">	
+    <meta name="description" content="Senior Product Manager with 10+ years spanning engineering, strategy consulting, and product leadership. Currently owning a $5B analytics portfolio at Ford Motor Company.">
+    <meta name="author" content="Pradeep Kumar">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Pradeep Kumar | Senior Product Manager">
+    <meta property="og:description" content="Engineer turned product leader. 10+ years across Ford, Deloitte, and global enterprises.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jpradeep7.github.io">
+    <meta property="og:image" content="https://jpradeep7.github.io/assets/images/about/profile_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <!-- World-Class Executive Design Overrides -->
-    <style>
-        :root {
-            --primary-blue: #002c5f; /* Deep Executive Navy */
-            --accent-blue: #0066cc;  /* Sharp Tech Blue */
-            --text-dark: #2b2b2b;    /* High contrast reading text */
-            --text-black: #000000;   /* For bold emphasis */
-            --bg-light: #f4f7f9;     /* Soft section background */
-        }
-        
-        /* Global Typography */
-        body, p, .single-about-txt p, .description, .custom-card p, .impact-list li, .single-about-add-info p {
-            color: var(--text-dark) !important;
-            font-size: 16px !important;
-            line-height: 1.8 !important;
-            font-weight: 400;
-        }
-
-        /* Hero Banner */
-        .header-text p {
-            color: #ffffff !important;
-            font-size: 22px !important;
-            font-weight: 500 !important;
-            letter-spacing: 0.5px;
-            text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
-            margin-bottom: 40px;
-        }
-        .header-text h2 {
-            font-size: 56px !important;
-            font-weight: 700 !important;
-            text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
-        }
-        .header-text h2 span, .navbar-header a.navbar-brand, nav.navbar.bootsnav ul.nav > li > a:hover { 
-            color: var(--accent-blue) !important; 
-        }
-        
-        /* [FIX] Bulletproof Scroll Offset for Fixed Header */
-        #about, #clients, #experience, #education, #capabilities, #achievements, #beyond-work {
-            padding-top: 110px !important; 
-            padding-bottom: 60px !important;
-            margin-top: -20px !important; 
-        }
-        
-        /* Buttons */
-        .btn-primary-custom {
-            display: inline-block; width: 230px; height: 60px; line-height: 60px; border-radius: 4px;
-            text-transform: uppercase; color: #fff; background: var(--primary-blue);
-            box-shadow: 0 4px 15px rgba(0,0,0,.3); transition: all 0.3s ease; margin: 10px; font-weight: 600; font-size: 15px; letter-spacing: 1px;
-        }
-        .btn-primary-custom:hover { background: var(--accent-blue); color: #fff; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,.4); transform: translateY(-2px); }
-        
-        .btn-secondary-custom {
-            display: inline-block; width: 230px; height: 60px; line-height: 60px; border-radius: 4px;
-            text-transform: uppercase; color: #fff; background: rgba(255,255,255,0.1); border: 2px solid #fff;
-            backdrop-filter: blur(5px); transition: all 0.3s ease; margin: 10px; font-weight: 600; font-size: 15px; letter-spacing: 1px;
-        }
-        .btn-secondary-custom:hover { background: #fff; color: var(--primary-blue); text-decoration: none; transform: translateY(-2px); }
-
-        /* About Me Image */
-        .single-about-img::before { display: none !important; }
-        .single-about-img { box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 8px; overflow: hidden; background: #fff; }
-        .single-about-img img { 
-            width: 100%; height: auto !important; max-height: 500px; object-fit: cover; border-radius: 8px 8px 0 0; display: block;
-        }
-        .about-list-icon { background: var(--primary-blue) !important; position: relative !important; width: 100% !important; border-radius: 0 0 8px 8px; padding: 15px 0; }
-        .about-list-icon ul li a { border: none !important; font-size: 20px; }
-        
-        /* Client Logo Wall */
-        .client-logo-container { text-align: center; margin-top: 50px; }
-        .client-logo { display: inline-block; padding: 15px 25px; vertical-align: middle; }
-        .client-logo img { max-height: 40px; width: auto; filter: grayscale(100%) opacity(0.6); transition: all 0.3s ease; }
-        .client-logo img:hover { filter: grayscale(0%) opacity(1); transform: scale(1.1); }
-        
-        /* Executive Vertical Timeline */
-        .executive-timeline-container { max-width: 950px; margin: 0 auto; padding: 20px 15px; }
-        .exec-timeline-item { position: relative; padding-left: 45px; border-left: 3px solid #d1d9e6; margin-bottom: 55px; transition: all 0.3s ease; }
-        .exec-timeline-item:hover { transform: translateX(5px); }
-        .exec-timeline-item::before {
-            content: ''; position: absolute; left: -12px; top: 0; width: 21px; height: 21px;
-            background: #fff; border: 4px solid var(--accent-blue); border-radius: 50%;
-            box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15); transition: all 0.3s ease;
-        }
-        .exec-timeline-item:hover::before { background: var(--accent-blue); }
-        .exec-date { font-size: 14px; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
-        .exec-company { font-size: 22px; font-weight: 700; color: var(--primary-blue); margin-bottom: 4px; line-height: 1.2; }
-        .exec-role { font-size: 17px; font-weight: 600; color: var(--accent-blue); margin-bottom: 10px; }
-        .exec-charter { font-style: italic; color: #555; margin-bottom: 15px; display: block; }
-        .impact-list { padding-left: 18px; margin-top: 15px; }
-        .impact-list li { list-style-type: square; margin-bottom: 12px; }
-        .impact-list li strong { color: var(--primary-blue) !important; font-weight: 600; }
-
-        /* Executive Horizontal Timeline (Education) */
-        .education-horizontal-timeline .experience-time h2 { font-weight: 600; color: var(--text-dark); }
-        .education-horizontal-timeline .experience-time h3 { font-weight: 700; color: var(--primary-blue); font-size: 18px; margin-top: 5px;}
-        .timeline-horizontal-border i { color: var(--accent-blue); font-size: 14px; }
-        .single-timeline-horizontal { background: #d1d9e6; height: 2px; }
-        .education-horizontal-timeline .timeline-content h4.title { font-size: 18px; font-weight: 600; color: var(--primary-blue); margin-bottom: 5px;}
-        .education-horizontal-timeline .timeline-content h5 { font-size: 15px; font-weight: 500; color: var(--accent-blue); margin-bottom: 12px;}
-        
-        /* Flexbox Cards */
-        .flex-row { display: flex; flex-wrap: wrap; margin-left: -15px; margin-right: -15px;}
-        .flex-row > [class*='col-'] { display: flex; flex-direction: column; padding-left: 15px; padding-right: 15px;}
-        
-        .custom-card {
-            background: #fff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-            padding: 30px; margin-bottom: 30px; transition: all 0.3s ease; 
-            border: 1px solid #eef2f5; flex: 1; display: flex; flex-direction: column;
-        }
-        .custom-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); border-color: #d1d9e6;}
-        .custom-card img { border-radius: 6px; margin-bottom: 20px; width: 100%; height: 200px; object-fit: cover; border: 1px solid #eee;}
-        .custom-card h4 { font-size: 19px; font-weight: 700; color: var(--primary-blue); margin-bottom: 12px; line-height: 1.4;}
-        .custom-card p { flex-grow: 1; margin-bottom: 0;}
-        
-        /* Tech Stack Specific Styles */
-        .tech-icon-wrapper { margin-bottom: 20px; }
-        .tech-icon-wrapper i { color: var(--accent-blue); }
-        .tech-tools { font-size: 14px; font-weight: 600; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; display: block;}
-        
-        /* Awards Carousel Custom Styles - STRICT IMAGE HEIGHT ENFORCED */
-        .award-slide-container { display: flex; flex-wrap: wrap; align-items: center; background: #fff; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eef2f5; }
-        .award-img-col { padding: 0; }
-        .award-img-col img { width: 100%; height: 380px; object-fit: cover; }
-        .award-text-col { padding: 40px; }
-        .award-text-col h3 { font-size: 24px; font-weight: 700; color: var(--primary-blue); margin-bottom: 15px; }
-        
-        #awards-carousel .owl-dots { text-align: center; margin-top: 25px; }
-        #awards-carousel .owl-dots .owl-dot { display: inline-block; }
-        #awards-carousel .owl-dots .owl-dot span { background: #d1d9e6; width: 12px; height: 12px; margin: 5px 8px; border-radius: 50%; display: block; transition: all 0.3s ease; }
-        #awards-carousel .owl-dots .owl-dot.active span, #awards-carousel .owl-dots .owl-dot:hover span { background: var(--accent-blue); transform: scale(1.3); }
-
-        /* Live Call To Action Link */
-        .live-link-btn {
-            display: inline-block; margin-top: 15px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
-            color: var(--accent-blue); text-decoration: none; transition: all 0.3s;
-            background: rgba(0, 102, 204, 0.08); padding: 10px 18px; border-radius: 4px;
-        }
-        .live-link-btn:hover { color: #fff; background: var(--accent-blue); text-decoration: none; transform: translateX(5px);}
-    </style>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pradeep Kumar",
+        "jobTitle": "Senior Product Manager",
+        "worksFor": { "@type": "Organization", "name": "Ford Motor Company" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Indian Institute of Management Kozhikode" },
+            { "@type": "CollegeOrUniversity", "name": "SSN College of Engineering" }
+        ],
+        "knowsAbout": ["Product Management", "AI", "Enterprise Platforms", "Digital Strategy", "P&L Ownership"],
+        "url": "https://jpradeep7.github.io",
+        "sameAs": ["https://www.linkedin.com/in/pradeepkumarj7/"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressCountry": "India" }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="top-area">
-        <div class="header-area">
-            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="index.html">Pradeep Kumar</a>
+    <!-- Accessibility: Skip Navigation -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">PK</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#recognition">Recognition</a></li>
+                <li><a href="#beyond-work">Beyond Work</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Senior Product Manager</span>
+                    <h1 class="hero-name">Pradeep Kumar</h1>
+                    <p class="hero-tagline">Engineer turned product leader. I've built financial platforms, consulted for Fortune 500s at Deloitte, and now own a $5B analytics portfolio at Ford. I bring an engineer's rigor to product strategy.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">$5B+</span>
+                            <span class="stat-label">Portfolio Managed</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Products Shipped</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">F500</span>
+                            <span class="stat-label">Global Clients</span>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li class="smooth-menu"><a href="#about">About</a></li>
-                            <li class="smooth-menu"><a href="#experience">Experience</a></li>
-                            <li class="smooth-menu"><a href="#education">Education</a></li>
-                            <li class="smooth-menu"><a href="#capabilities">Capabilities</a></li>
-                            <li class="smooth-menu"><a href="#achievements">Recognition</a></li>
-                            <li class="smooth-menu"><a href="#beyond-work">Culture</a></li>
+                    <div class="hero-actions">
+                        <a href="assets/download/Pradeep_Kumar_Resume.pdf" download class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Get in Touch
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">The Short Version</h2>
+                </div>
+                <div class="about-grid" data-animate>
+                    <div class="about-text">
+                        <h3 class="about-headline">Most PMs come from one background. I've done three &mdash; and that's the point.</h3>
+                        <p>I spent my first three years as a full-stack developer at Cognizant, shipping financial platforms for S&amp;P Global and MetLife. That taught me how software actually gets built &mdash; not the Jira-ticket version, but the real thing: database queries, API contracts, deployment pipelines, and the 2 AM production calls that come with it.</p>
+                        <p>Then I went to IIM Kozhikode for my MBA, interned at Unilever in Argentina, and joined Deloitte as a strategy consultant. Four years of helping Fortune 500 companies untangle their digital transformation taught me how large organizations actually make decisions &mdash; and more importantly, why they struggle to.</p>
+                        <p>Now I'm at Ford, where I own a 4-product analytics portfolio supporting over <strong>$5B in annual service and parts revenue</strong>. I've built AI tools, launched a React component library used by 100+ teams, and led platform modernization that saved millions. The common thread? I'm most useful when a problem sits at the intersection of technology, business, and people.</p>
+                        <p class="about-location">Based in Chennai, India &middot; Open to global opportunities</p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="assets/images/about/profile_image.jpg" alt="Pradeep Kumar, Senior Product Manager" loading="lazy">
+                        </div>
+                        <a href="https://www.linkedin.com/in/pradeepkumarj7/" target="_blank" rel="noopener noreferrer" class="about-linkedin">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT LOGOS -->
+        <section class="logos-section" data-animate>
+            <div class="container">
+                <p class="logos-label">Companies I've worked with and consulted for</p>
+                <div class="logos-track">
+                    <div class="logo-item"><img src="assets/images/clients/ford.png" alt="Ford Motor Company" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/google.png" alt="Google" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/unilever.png" alt="Unilever" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/wells-fargo.png" alt="Wells Fargo" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/mcdonalds.png" alt="McDonald's" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/clorox.png" alt="Clorox" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/sony.png" alt="Sony" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/metlife.png" alt="MetLife" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/exelon.png" alt="Exelon" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/tsmc.png" alt="TSMC" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/impossible-foods.png" alt="Impossible Foods" loading="lazy"></div>
+                    <div class="logo-item"><img src="assets/images/clients/zoetis.png" alt="Zoetis" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Career</span>
+                    <h2 class="section-title">Where I've Worked</h2>
+                </div>
+                <div class="timeline">
+
+                    <!-- Ford PLM -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/clients/ford.png" alt="Ford" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">Aug 2025 &mdash; Present</span>
+                                    <h3 class="timeline-company">Ford Motor Company</h3>
+                                    <h4 class="timeline-role">Product Line Manager &ndash; Service &amp; Parts Analytics</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">I now own the P&amp;L for a 4-product analytics portfolio that supports Ford's global parts and service business &mdash; a business unit that does over $5B in annual revenue.</p>
+                            <ul class="timeline-impacts">
+                                <li>Delivering <strong>$3M in annual cost savings</strong> through platform modernization, AI automation, and value-chain efficiency improvements across North America and Europe.</li>
+                                <li>Developed the business case and <strong>secured $5M in funding</strong> to reimagine how dealers and Ford business users consume analytics dashboards and performance metrics &mdash; from static monthly reports to dynamic, real-time insights.</li>
+                                <li>Built a 0-to-1 AI-powered self-service dashboard platform that lets business teams create and manage their own Power BI dashboards &mdash; cutting out weeks of back-and-forth with analytics teams.</li>
+                                <li>Designed a "namesweep" capability that links fleet customer data to dealer invoices, <strong>reducing service attrition by 10%</strong>. Also built an incentive model for field specialists to expand sales coverage.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Ford PM -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/clients/ford.png" alt="Ford" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">Sep 2023 &mdash; Aug 2025</span>
+                                    <h3 class="timeline-company">Ford Motor Company</h3>
+                                    <h4 class="timeline-role">Product Manager &ndash; Platform Engineering</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">My first role at Ford was building the internal developer tools and platforms that other product teams use to ship faster.</p>
+                            <ul class="timeline-impacts">
+                                <li>Led the 0-to-1 build of Ford's Universal Components Library &mdash; a reusable React-based platform that <strong>cut webpage development time by 75%</strong>. Scaled it from a Ford Credit pilot to <strong>100+ teams across 11 business units</strong> within a year. It now powers FordPro.com and Ford.com.</li>
+                                <li>Built an internal AI assistant for developers &mdash; a one-stop copilot that lets teams create webpages in <strong>under 2 minutes</strong>, significantly reducing prototyping and implementation effort.</li>
+                                <li>Ran an end-to-end value chain assessment that delivered <strong>$200K in savings</strong> through license optimization and better resource utilization. Sprint velocity went up 55%, cycle time dropped 30%, and developer issues fell 20% QoQ.</li>
+                            </ul>
+                            <a href="https://www.fordpro.com/en-us/" target="_blank" rel="noopener noreferrer" class="timeline-link">
+                                See it live on FordPro.com
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Deloitte PM -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/experience/deloitte.png" alt="Deloitte" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">2021 &mdash; Sep 2023</span>
+                                    <h3 class="timeline-company">Deloitte Consulting</h3>
+                                    <h4 class="timeline-role">Product Manager &ndash; Strategic Enterprise Platforms</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">After two years on the strategy side, I moved into product management &mdash; owning the build and delivery of enterprise platforms for Fortune 500 clients.</p>
+                            <ul class="timeline-impacts">
+                                <li>Led product development for an automated banking regulatory reporting system for major US financial institutions. <strong>Reduced manual effort by 65%</strong> and saved clients <strong>$250K annually</strong> through faster, more reliable compliance workflows.</li>
+                                <li>Launched a data-driven capability assessment product. Used it as a strategic entry point to uncover client capability gaps &mdash; <strong>scaled adoption 3x in 12 months</strong> and opened downstream consulting engagements.</li>
+                                <li>Built a centralized Enterprise Architecture platform for a global FMCG client to streamline IT governance, project tracking, and document management &mdash; <strong>cutting EA review effort by 60%</strong>.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Deloitte Strategy Consultant -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/experience/deloitte.png" alt="Deloitte" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">Jun 2019 &mdash; 2021</span>
+                                    <h3 class="timeline-company">Deloitte Consulting</h3>
+                                    <h4 class="timeline-role">Strategy Consultant &ndash; Digital Transformation</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">This is where I learned how big organizations think about strategy. I worked directly with C-suite stakeholders on operating model design and digital transformation roadmaps.</p>
+                            <ul class="timeline-impacts">
+                                <li>Assessed value streams across 4 subsidiaries of a leading US energy company and designed a consolidated operating model that removed redundancies &mdash; <strong>reducing annual opex costs by 27%</strong>.</li>
+                                <li>Developed the strategic roadmap for a leading music distribution company by evaluating strengths, capability gaps, and market trends &mdash; contributing to <strong>35% incremental revenue growth</strong> and strengthened market positioning.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Unilever -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/experience/unilever.png" alt="Unilever" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">Apr 2018 &mdash; Jun 2018</span>
+                                    <h3 class="timeline-company">Unilever, Argentina</h3>
+                                    <h4 class="timeline-role">Project Manager &ndash; P&amp;L Forecasting (MBA Internship)</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">Flew to Buenos Aires for my MBA internship to solve a real problem: Unilever's LATAM financial forecasts were inconsistent and heavily manual.</p>
+                            <ul class="timeline-impacts">
+                                <li>Built a P&amp;L forecasting tool that <strong>reduced manual effort by 80%</strong> and <strong>improved forecast accuracy by 20%</strong>.</li>
+                                <li>The LATAM pilot worked well enough that it directly shaped <strong>Unilever's global rollout strategy</strong> for other international markets.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Cognizant -->
+                    <article class="timeline-item" data-animate>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="assets/images/experience/cognizant.png" alt="Cognizant" class="timeline-logo">
+                                <div>
+                                    <span class="timeline-date">Jul 2014 &mdash; Jun 2017</span>
+                                    <h3 class="timeline-company">Cognizant Technology Solutions</h3>
+                                    <h4 class="timeline-role">Full Stack Developer &ndash; Financial &amp; Data Platforms</h4>
+                                </div>
+                            </div>
+                            <p class="timeline-charter">Where it all started. Three years of hands-on engineering across front-end, back-end, and databases for clients in Financial Services and Insurance.</p>
+                            <ul class="timeline-impacts">
+                                <li>Delivered end-to-end engineering for complex data platforms for S&amp;P Global and MetLife &mdash; the kind of work where you learn how production systems really behave under pressure.</li>
+                                <li>Led performance optimization for a pilot stock trading platform, <strong>improving responsiveness by 25%</strong> under load.</li>
+                            </ul>
+                            <a href="https://www.spice-indices.com/idp/#/" target="_blank" rel="noopener noreferrer" class="timeline-link">
+                                See S&amp;P Spice platform
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS / INITIATIVES -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Initiatives</span>
+                    <h2 class="section-title">Things I've Built</h2>
+                </div>
+                <div class="projects-grid">
+
+                    <div class="project-card" data-animate>
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <span class="project-badge">Active at Ford</span>
+                        </div>
+                        <h3>AI-Powered Resource Intelligence Platform</h3>
+                        <p class="project-problem">The existing performance review process at Ford was broken in a few specific ways: feedback was generic and only written during year-end reviews, 360-degree feedback collection had poor response rates and no centralized tracking, and managers walked into 1:1 meetings with no data to anchor the conversation. Reviews felt like a formality instead of a growth tool.</p>
+                        <h4>What I built</h4>
+                        <ul class="project-highlights">
+                            <li>A single platform where managers can request, track, and collect 360-degree feedback from a reportee's peers &mdash; all in one place, with automated reminders.</li>
+                            <li>AI-generated consolidated feedback summaries written in Ford's standard review format, so managers don't start from a blank page.</li>
+                            <li>Dynamic performance metrics pulled directly from Jira and GitHub &mdash; giving managers real data on delivery velocity, code contributions, and sprint performance.</li>
+                            <li>Objective tracking that lets managers see whether reportees are on track against their annual goals, updated in real-time.</li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="clearfix"></div>
-    </header>
-
-    <!-- Welcome Hero -->
-    <section id="welcome-hero" class="welcome-hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="header-text">
-                        <h2>hi <span>,</span> i am <br> Pradeep Kumar <span>.</span></h2>
-                        <p>Senior Product Manager | AI & Enterprise Platforms | Driving $5B+ Portfolios</p>
-                        <div class="hero-btn-group">
-                            <a href="assets/download/Pradeep_Kumar_Resume.pdf" download class="btn-primary-custom">Download Resume</a>
-                            <a href="https://linkedin.com/in/pradeepkumarj7" target="_blank" class="btn-secondary-custom">LinkedIn Profile <i class="fa fa-linkedin" style="margin-left: 5px;"></i></a>
+                        <div class="project-impact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                            Saves ~15&ndash;20 hours per manager per review cycle
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Me -->
-    <section id="about" class="about">
-        <div class="section-heading text-center">
-            <h2>Executive Summary</h2>
-        </div>
-        <!-- Reduced spacing specifically for this top section -->
-        <div class="container" style="margin-top: 20px;">
-            <div class="about-content">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <div class="single-about-txt">
-                            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--primary-blue) !important;">
-                                I build digital products that solve real business problems, drive revenue, and scale easily.
-                            </h3>
-                            <p>
-                                My career path is unique: <strong>Engineer ➔ MBA ➔ Strategy Consultant ➔ Senior Product Leader</strong>. This background gives me a rare advantage. I can dive deep into technical architecture with engineering teams, and just as easily lead P&L and commercial strategy in the boardroom. <br><br>
-                                I believe in building products from the ground up by understanding the user's actual environment. Whether I am launching new AI platforms, modernizing enterprise systems, or managing a $5B automotive portfolio, my goal is always the same: turn complex challenges into clear, scalable products that customers love and trust.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-sm-offset-1">
-                        <div class="single-about-img">
-                            <img src="assets/images/about/profile_image.jpg" alt="Pradeep Kumar">
-                            <div class="about-list-icon text-center">
-                                <ul>
-                                    <li style="float: none; display: inline-block;"><a href="https://linkedin.com/in/pradeepkumarj7" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
+                    <div class="project-card" data-animate>
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
                             </div>
+                            <span class="project-badge">Active at Ford</span>
+                        </div>
+                        <h3>Product Management Operating System</h3>
+                        <p class="project-problem">When I joined Ford, I noticed that PM practices varied wildly across teams. There was no shared playbook, no consistent way to track metrics, and no regular forum for PMs to share learnings or challenge each other's thinking. I set out to fix that.</p>
+                        <h4>What I established</h4>
+                        <ul class="project-highlights">
+                            <li><strong>Quarterly Product Line Reviews</strong> &mdash; structured reviews of each product's health, roadmap progress, and commercial impact with leadership visibility.</li>
+                            <li><strong>Quarterly PM Newsletter</strong> &mdash; a digest of product wins, learnings, and best practices circulated across the PM organization.</li>
+                            <li><strong>Jira Best Practices Playbook</strong> &mdash; standardized how teams use Jira for backlog management, sprint planning, and reporting so metrics are actually comparable across products.</li>
+                            <li><strong>Monthly AI Idea Sessions</strong> &mdash; a recurring forum where PMs and engineers pitch AI use cases for their product lines, with the best ideas getting fast-tracked to prototyping.</li>
+                            <li><strong>Metrics Tracking Framework</strong> &mdash; defined consistent KPIs across the portfolio so leadership can compare product health apples-to-apples.</li>
+                        </ul>
+                        <div class="project-impact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                            Adopted across Ford's Service &amp; Parts analytics organization
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Client Logos -->
-    <section id="clients" style="background: var(--bg-light);">
-        <div class="container">
-            <div class="section-heading text-center">
-                <h2>A Portfolio of Global Engagements</h2>
-            </div>
-            <div class="client-logo-container">
-                <div class="client-logo"><img src="assets/images/clients/ford.png" alt="Ford"></div>
-                <div class="client-logo"><img src="assets/images/clients/google.png" alt="Google"></div>
-                <div class="client-logo"><img src="assets/images/clients/unilever.png" alt="Unilever"></div>
-                <div class="client-logo"><img src="assets/images/clients/wells-fargo.png" alt="Wells Fargo"></div>
-                <div class="client-logo"><img src="assets/images/clients/mcdonalds.png" alt="McDonalds"></div>
-                <div class="client-logo"><img src="assets/images/clients/clorox.png" alt="Clorox"></div>
-                <div class="client-logo"><img src="assets/images/clients/sony.png" alt="Sony ATV"></div>
-                <div class="client-logo"><img src="assets/images/clients/metlife.png" alt="Metlife"></div>
-                <div class="client-logo"><img src="assets/images/clients/exelon.png" alt="Exelon"></div>
-                <div class="client-logo"><img src="assets/images/clients/tsmc.png" alt="TSMC"></div>
-                <div class="client-logo"><img src="assets/images/clients/impossible-foods.png" alt="Impossible Foods"></div>
-                <div class="client-logo"><img src="assets/images/clients/zoetis.png" alt="Zoetis"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience -->
-    <section id="experience" class="experience">
-        <div class="section-heading text-center">
-            <h2>Professional Experience</h2>
-        </div>
-        <div class="container" style="margin-top: 50px;">
-            <div class="executive-timeline-container">
-                
-                <!-- Ford PLM -->
-                <div class="exec-timeline-item">
-                    <span class="exec-date">Aug 2025 - Present</span>
-                    <h3 class="exec-company">Ford Motor Company</h3>
-                    <div class="exec-role">Product Line Manager – Service & Parts Analytics</div>
-                    <span class="exec-charter">Chartered to drive profitability and operational efficiency across the multi-billion dollar global parts and service business by leveraging data and AI.</span>
-                    <ul class="impact-list">
-                        <li>Own the P&L and strategic roadmap for a 4-product analytics portfolio that underpins over <strong>$5B in annual sales</strong>, delivering <strong>$3M in annual cost savings</strong> through platform modernization and AI-driven automation.</li>
-                        <li>Architected and launched a 0-to-1 AI-powered self-service analytics platform. This democratized data access, empowering business teams to build their own Power BI dashboards and <strong>accelerating data-driven decision-making</strong>.</li>
-                        <li>Devised and shipped a "namesweep" capability that links disparate fleet customer data to dealer invoices, uncovering critical retention opportunities and <strong>reducing service attrition by 10%</strong>.</li>
-                    </ul>
+        <!-- CAPABILITIES -->
+        <section class="section section-alt" id="capabilities">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">What I Bring</span>
+                    <h2 class="section-title">How I Operate</h2>
                 </div>
+                <div class="capabilities-grid">
 
-                <!-- Ford PM -->
-                <div class="exec-timeline-item">
-                    <span class="exec-date">Sep 2023 - Aug 2025</span>
-                    <h3 class="exec-company">Ford Motor Company</h3>
-                    <div class="exec-role">Product Manager – Platform Engineering</div>
-                    <span class="exec-charter">Tasked with accelerating digital transformation by creating scalable, reusable engineering platforms and tools for internal development teams.</span>
-                    <ul class="impact-list">
-                        <li>Orchestrated the 0-to-1 build of Ford’s Universal Components Library, a reusable React-based front-end platform that became the standard for FordPro, <strong>reducing webpage development time by 75%</strong>.</li>
-                        <li>Pioneered an internal AI assistant for developers. This "web development copilot" served as a one-stop-shop for documentation and code generation, enabling <strong>webpage creation in under 2 minutes</strong>.</li>
-                        <li>Led an end-to-end value chain assessment of our engineering tools, identifying and executing on license optimization opportunities that yielded <strong>$200K in savings</strong> while increasing sprint velocity by 55%.</li>
-                    </ul>
-                    <a href="https://www.fordpro.com/en-us/" target="_blank" class="live-link-btn">View Live Implementation (FordPro) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
-                </div>
-
-                <!-- Deloitte -->
-                <div class="exec-timeline-item">
-                    <span class="exec-date">Jun 2019 - Sep 2023</span>
-                    <h3 class="exec-company">Deloitte Consulting</h3>
-                    <div class="exec-role">Product Manager / Strategy Consultant – Enterprise Platforms</div>
-                    <span class="exec-charter">Engaged by Fortune 500 clients to lead digital transformation, automate core business functions, and design new operating models.</span>
-                    <ul class="impact-list">
-                        <li>Led product development for an automated banking regulatory reporting product used by major US financial institutions, <strong>reducing manual effort by 65%</strong> and creating <strong>$250K in annual operational savings</strong>.</li>
-                        <li>Launched a data-driven capability assessment product for Fortune 500 clients, which was strategically used to <strong>scale adoption 3x in 12 months</strong> and create an entry point for downstream consulting.</li>
-                        <li>Architected a centralized Enterprise Architecture (EA) platform for a global CPG client to streamline IT governance, <strong>cutting EA review and approval effort by 60%</strong>.</li>
-                    </ul>
-                </div>
-
-                <!-- Unilever -->
-                <div class="exec-timeline-item">
-                    <span class="exec-date">Apr 2018 - Jun 2018</span>
-                    <h3 class="exec-company">Unilever, Argentina</h3>
-                    <div class="exec-role">Project Manager – Profit & Loss Forecasting (Internship)</div>
-                    <span class="exec-charter">Brought in to solve inconsistencies in financial forecasting for the LATAM market by developing a standardized, data-driven tool.</span>
-                    <ul class="impact-list">
-                        <li>Developed and piloted a financial P&L forecasting tool that automated data aggregation, reducing manual effort by 80% and <strong>improving forecast accuracy by a critical 20%</strong>.</li>
-                        <li>The success of the LATAM pilot directly informed the global rollout strategy for the tool across other international markets.</li>
-                    </ul>
-                </div>
-
-                <!-- Cognizant -->
-                <div class="exec-timeline-item">
-                    <span class="exec-date">Jul 2014 - Jun 2017</span>
-                    <h3 class="exec-company">Cognizant Technology Solutions</h3>
-                    <div class="exec-role">Full Stack Developer – Financial & Data Platforms</div>
-                    <span class="exec-charter">Developed and maintained mission-critical financial and data platforms for leading clients in the Financial Services and Insurance sectors.</span>
-                    <ul class="impact-list">
-                        <li>Delivered end-to-end engineering, including front-end development, back-end services, and database management, for complex data platforms.</li>
-                        <li>Led the performance optimization for a pilot stock trading platform, refactoring key components to <strong>improve application responsiveness by 25%</strong> under load.</li>
-                    </ul>
-                    <a href="https://www.spice-indices.com/idp/#/" target="_blank" class="live-link-btn">View Live Site (S&P Spice) <i class="fa fa-external-link" style="margin-left: 5px;"></i></a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Certifications -->
-    <section id="education" class="education" style="background: var(--bg-light);">
-        <div class="section-heading text-center">
-            <h2>Education & Credentials</h2>
-        </div>
-        <div class="container" style="margin-top: 50px;">
-            <div class="education-horizontal-timeline">
-                <div class="row flex-row">
-                    <!-- B.E. -->
-                    <div class="col-sm-4">
-                        <div class="single-horizontal-timeline">
-                            <div class="experience-time">
-                                <h2>2010 - 2014</h2>
-                                <h3>B.E. Computer Science</h3>
-                            </div>
-                            <div class="timeline-horizontal-border">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                                <span class="single-timeline-horizontal"></span>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">SSN College of Engineering</h4>
-                                    <h5>Chennai, India</h5>
-                                    <p class="description">
-                                        Core focus on software engineering, data structures, and foundational computer science principles.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="capability-card" data-animate>
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </div>
+                        <h3>Product Strategy &amp; P&amp;L Ownership</h3>
+                        <p>I've owned product P&amp;Ls, built business cases, and presented to C-suite stakeholders. At Ford, I manage a portfolio that underpins $5B+ in revenue. At Deloitte, I designed operating models that cut client costs by 27%. I don't just write PRDs &mdash; I own commercial outcomes.</p>
+                        <span class="capability-tools">Business Cases &middot; Roadmaps &middot; Go-to-Market &middot; Stakeholder Management</span>
                     </div>
-                    <!-- MBA -->
-                    <div class="col-sm-4">
-                        <div class="single-horizontal-timeline">
-                            <div class="experience-time">
-                                <h2>2017 - 2019</h2>
-                                <h3>Master of Business Administration</h3>
-                            </div>
-                            <div class="timeline-horizontal-border">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                                <span class="single-timeline-horizontal"></span>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">Indian Institute of Management, Kozhikode</h4>
-                                    <h5>Kerala, India</h5>
-                                    <p class="description">
-                                        Core focus on Business Strategy, Financial Forecasting, and Enterprise Management.
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div class="capability-card" data-animate>
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>
                         </div>
+                        <h3>AI &amp; Platform Thinking</h3>
+                        <p>I've shipped three 0-to-1 AI products: a self-service analytics platform, a developer copilot, and a resource intelligence tool. My engineering background means I can go deep on architecture with engineers and still keep the conversation grounded in user problems, not just technical possibilities.</p>
+                        <span class="capability-tools">AWS &middot; AI Agents &middot; React &middot; Power BI &middot; Power Automate</span>
                     </div>
-                    <!-- Certifications -->
-                    <div class="col-sm-4">
-                        <div class="single-horizontal-timeline">
-                            <div class="experience-time">
-                                <h2>Active</h2>
-                                <h3>Professional Certifications</h3>
-                            </div>
-                            <div class="timeline-horizontal-border">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                                <span class="single-timeline-horizontal spacial-horizontal-line"></span>
-                            </div>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">Industry Credentials</h4>
-                                    <h5>Global</h5>
-                                    <p class="description">
-                                        Certified Product Owner (CSPO), Certified Scrum Master (CSM), AWS Solution Architect, ITIL Foundation, Future of Mobility (EV).
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div class="capability-card" data-animate>
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                         </div>
+                        <h3>Data-Driven Product Decisions</h3>
+                        <p>Every product decision I make starts with data. I've built forecasting tools (Unilever), designed metrics frameworks (Ford), and used capability assessments as strategic sales tools (Deloitte). I'm hands-on with SQL and dashboarding &mdash; I don't wait for someone else to pull the numbers.</p>
+                        <span class="capability-tools">SQL &middot; Tableau &middot; Power BI &middot; QlikSense &middot; Google Analytics</span>
                     </div>
+
+                    <div class="capability-card" data-animate>
+                        <div class="capability-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Cross-Functional Leadership</h3>
+                        <p>At Deloitte, I worked across 4 subsidiaries to consolidate an operating model. At Ford, I scaled a platform from one team to 100+ across 11 business units. I'm comfortable leading without authority &mdash; aligning engineering, design, sales, and leadership around a shared direction, even when priorities compete.</p>
+                        <span class="capability-tools">Jira &middot; Confluence &middot; Figma &middot; Miro &middot; Rally</span>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Capabilities & Tech Stack -->
-    <section id="capabilities" class="portfolio">
-        <div class="section-heading text-center">
-            <h2>Capabilities & Tech Stack</h2>
-        </div>
-        <div class="container" style="margin-top: 50px;">
-            <div class="row flex-row">
-                
-                <!-- Strategy & Comms -->
-                <div class="col-md-6">
-                    <div class="custom-card">
-                        <div class="tech-icon-wrapper">
-                            <i class="fa fa-briefcase fa-3x"></i>
-                        </div>
-                        <h4>Strategy & Executive Communication</h4>
-                        <span class="tech-tools">PowerPoint | Excel | Word</span>
-                        <p>Honed during my tenure as a Strategy Consultant at Deloitte. I leverage PowerPoint for high-stakes executive pitches, Excel for complex financial modelling and business cases, and Word for drafting whitepapers and product guides.</p>
-                    </div>
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Credentials</span>
+                    <h2 class="section-title">Education &amp; Certifications</h2>
                 </div>
-                
-                <!-- AI & Cloud Technologies -->
-                <div class="col-md-6">
-                    <div class="custom-card">
-                        <div class="tech-icon-wrapper">
-                            <i class="fa fa-cloud fa-3x"></i>
-                        </div>
-                        <h4>AI & Cloud Technologies</h4>
-                        <span class="tech-tools">AWS Cloud | AI Agents | Claude Copilot | Power Automate</span>
-                        <p>I actively build and deploy AI agents and leverage cloud infrastructure to automate heavy-lifting workflows. This accelerates development cycles, improves operational efficiency, and frees up bandwidth for strategic product thinking.</p>
-                    </div>
-                </div>
+                <div class="education-grid" data-animate>
 
-                <!-- Data & Analytics -->
-                <div class="col-md-6">
-                    <div class="custom-card">
-                        <div class="tech-icon-wrapper">
-                            <i class="fa fa-database fa-3x"></i>
-                        </div>
-                        <h4>Data & Analytics</h4>
-                        <span class="tech-tools">Power BI | Tableau | MySQL | QlikSense | R</span>
-                        <p>Capable of querying and transforming massive datasets into actionable strategic insights. I rely on these tools to drive data-driven product decisions, forecast demand, and uncover customer retention opportunities.</p>
+                    <div class="education-card">
+                        <span class="education-year">2017 &ndash; 2019</span>
+                        <h3>Master of Business Administration</h3>
+                        <h4>Indian Institute of Management, Kozhikode</h4>
+                        <p>Kerala, India</p>
+                        <span class="education-detail">Business Strategy, Financial Forecasting, and Enterprise Management. This is where the shift from engineer to product strategist happened.</span>
                     </div>
-                </div>
 
-                <!-- Product Delivery -->
-                <div class="col-md-6">
-                    <div class="custom-card">
-                        <div class="tech-icon-wrapper">
-                            <i class="fa fa-cogs fa-3x"></i>
-                        </div>
-                        <h4>Product Delivery & Design</h4>
-                        <span class="tech-tools">Jira | Figma | Confluence | SharePoint | Rally</span>
-                        <p>Expert in orchestrating end-to-end product lifecycles. From rapid UI/UX prototyping and wireframing in Figma to agile sprint execution, backlog grooming, and cross-functional stakeholder alignment.</p>
+                    <div class="education-card">
+                        <span class="education-year">2010 &ndash; 2014</span>
+                        <h3>B.E. Computer Science</h3>
+                        <h4>SSN College of Engineering</h4>
+                        <p>Chennai, India</p>
+                        <span class="education-detail">Software engineering, data structures, and core CS fundamentals. Won 6 national-level programming competitions during this period.</span>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements & Awards -->
-    <section id="achievements" class="education" style="background: var(--bg-light);">
-        <div class="section-heading text-center">
-            <h2>Recognition & Performance</h2>
-        </div>
-        <div class="container" style="margin-top: 50px; max-width: 1000px;">
-            
-            <div id="awards-carousel" class="owl-carousel owl-theme">
-                
-                <!-- Slide 1: Corporate Excellence -->
-                <div class="item">
-                    <div class="award-slide-container">
-                        <div class="col-md-5 award-img-col">
-                            <img src="assets/images/personal/impact.jpg" alt="Sustained Excellence & Business Impact">
-                        </div>
-                        <div class="col-md-7 award-text-col">
-                            <i class="fa fa-trophy fa-3x" style="color: var(--accent-blue); margin-bottom: 20px;"></i>
-                            <h3>Sustained Excellence & Business Impact</h3>
-                            <p>I have established a consistent track record of delivering outsized results in high-stakes corporate environments.<br><br>
-                            I have been formally recognized for consecutive years at both <strong>Ford Motor Company</strong> and <strong>Deloitte</strong> for spearheading digital innovation, leading cross-functional teams, and consistently exceeding portfolio revenue and delivery targets.</p>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Slide 2: The Winning Mindset -->
-                <div class="item">
-                    <div class="award-slide-container">
-                        <div class="col-md-5 award-img-col">
-                            <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=800&q=80" alt="A Foundation of Competitive Excellence">
-                        </div>
-                        <div class="col-md-7 award-text-col">
-                            <i class="fa fa-flag-checkered fa-3x" style="color: var(--accent-blue); margin-bottom: 20px;"></i>
-                            <h3>A Foundation of Competitive Excellence</h3>
-                            <p>My drive to win is rooted in a history of high-stakes academic and business competitions.<br><br>
-                            I bring the same strategic rigor that secured podium finishes in <strong>National-Level Business Simulations and Case Competitions</strong> at IIM Kozhikode, combined with the technical execution that won <strong>6 National-Level Programming Competitions</strong> as an engineer.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Beyond Work -->
-    <section id="beyond-work" class="portfolio">
-        <div class="section-heading text-center">
-            <h2>Culture & Beyond The Desk</h2>
-        </div>
-        <div class="container" style="margin-top: 50px;">
-            <div class="row flex-row">
-                <div class="col-md-4">
-                    <div class="custom-card">
-                        <img src="assets/images/personal/ngo.jpg" alt="NGO Work">
-                        <h4>Social Impact & Mentorship</h4>
-                        <p>Actively volunteer with local NGOs focusing on environmental sustainability, including tree planting, beach cleaning, and river water sanitation drives. I also dedicate time to mentoring students, helping them prepare for corporate placements and interviews.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="custom-card">
-                        <img src="assets/images/personal/sports.jpg" alt="Sports">
-                        <h4>Sports & Fitness</h4>
-                        <p>I am an Endurance Cyclist, Marathon Runner, Avid Trekker, Mountain Climber, and practice Calisthenics. I also play Cricket and Carrom. Competitively, I led my MBA Carrom team as Captain to win the inter-college Silver Medal, and have won multiple cricket tournaments.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="custom-card">
-                        <img src="assets/images/personal/speaking.jpg" alt="Speaking">
-                        <h4>Thought Leadership</h4>
-                        <p>I am a passionate public speaker, frequently delivering talks on Product Management and Tech Strategy. Alongside attending major tech conferences, I was recently invited as a <strong>Special Guest Speaker</strong> at IIM Sambalpur for their annual Product Conclave.</p>
-                    </div>
+                <div class="cert-badges" data-animate>
+                    <span class="cert-badge">Certified Product Owner (CSPO)</span>
+                    <span class="cert-badge">Certified Scrum Master (CSM)</span>
+                    <span class="cert-badge">AWS Solutions Architect</span>
+                    <span class="cert-badge">ITIL Foundation</span>
+                    <span class="cert-badge">Future of Mobility (EV)</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="footer-copyright" class="footer-copyright" style="background: var(--primary-blue); color: #fff; padding: 40px 0;">
-        <div class="container">
-            <div class="hm-footer-copyright text-center">
-                <h3 style="color: #fff; margin-bottom: 10px; font-weight: 600;">Let's build something great.</h3>
-                <p style="color: #a0c4ff !important; font-size: 15px; letter-spacing: 1px;">
-                    &copy; Pradeep Kumar Janarthanam.
-                </p>
+        <!-- RECOGNITION -->
+        <section class="section section-alt" id="recognition">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Track Record</span>
+                    <h2 class="section-title">Recognition</h2>
+                </div>
+                <div class="recognition-grid">
+
+                    <div class="recognition-card" data-animate>
+                        <div class="recognition-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <h3>Ford &ldquo;Star Performer&rdquo; &mdash; 3 Consecutive Years</h3>
+                        <p>Awarded Ford's Star Performer recognition for 2023, 2024, and 2025 &mdash; every year since joining. Recognized for scaling the Universal Components Library from a pilot to powering Ford.com and FordPro.com, and for driving measurable impact across the Service &amp; Parts analytics portfolio.</p>
+                    </div>
+
+                    <div class="recognition-card" data-animate>
+                        <div class="recognition-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                        </div>
+                        <h3>Deloitte &ldquo;Best Performer&rdquo; &mdash; 3 Consecutive Years</h3>
+                        <p>Awarded Deloitte's Best Performer recognition for 2020, 2021, and 2022 &mdash; for consistent delivery on complex enterprise engagements across financial services, energy, and consumer goods clients.</p>
+                    </div>
+
+                    <div class="recognition-card" data-animate>
+                        <div class="recognition-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        </div>
+                        <h3>6 National Programming Competitions Won</h3>
+                        <p>During my engineering days at SSN, I competed in and won 6 national-level programming competitions. Also placed in national business simulation and case competitions at IIM Kozhikode. Old habits die hard &mdash; I still think in structured problem-solving.</p>
+                    </div>
+
+                    <div class="recognition-card" data-animate>
+                        <div class="recognition-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3>Ford Designathon Winner &mdash; 2025</h3>
+                        <p>Redesigned how dealers interact with Ford applications &mdash; replacing static monthly data dumps with dynamic, real-time delivery and enabling systems to talk to each other to cut redundancy. The concept was presented to senior Ford leadership and has moved into implementation.</p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div id="scroll-Top">
-            <div class="return-to-top">
-                <i class="fa fa-angle-up" id="scroll-top"></i>
+        </section>
+
+        <!-- BEYOND WORK -->
+        <section class="section" id="beyond-work">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Off the Clock</span>
+                    <h2 class="section-title">Beyond the Desk</h2>
+                </div>
+                <div class="beyond-grid">
+
+                    <div class="beyond-card" data-animate>
+                        <div class="beyond-card-image">
+                            <img src="assets/images/personal/speaking.jpg" alt="Speaking at IIM Sambalpur Product Conclave" loading="lazy">
+                        </div>
+                        <div class="beyond-card-body">
+                            <h3>Speaking &amp; Thought Leadership</h3>
+                            <p>Recently invited as a <strong>Special Guest Speaker at IIM Sambalpur's annual Product Conclave</strong> to talk about product management in practice. I enjoy speaking about how engineering thinking shapes better product decisions, and regularly attend major tech conferences to stay sharp.</p>
+                        </div>
+                    </div>
+
+                    <div class="beyond-card" data-animate>
+                        <div class="beyond-card-image">
+                            <img src="assets/images/personal/ngo.jpg" alt="Community service and environmental volunteering" loading="lazy">
+                        </div>
+                        <div class="beyond-card-body">
+                            <h3>Mentorship &amp; Community</h3>
+                            <p>I volunteer with local NGOs on environmental drives &mdash; tree planting, beach cleanups, and river sanitation projects. I also spend time mentoring students preparing for corporate placements and product management interviews. Paying it forward matters to me.</p>
+                        </div>
+                    </div>
+
+                    <div class="beyond-card" data-animate>
+                        <div class="beyond-card-image">
+                            <img src="assets/images/personal/sports.jpg" alt="Cycling, running, and outdoor sports" loading="lazy">
+                        </div>
+                        <div class="beyond-card-body">
+                            <h3>Endurance &amp; Sports</h3>
+                            <p>Long-distance cyclist, marathon runner, trekker, and calisthenics practitioner. Captained my MBA carrom team to an inter-college silver medal, and I've won a few cricket tournaments along the way. The discipline carries over &mdash; training for a marathon and shipping a product have more in common than you'd think.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Connect</span>
+                    <h2 class="section-title">Let's Talk</h2>
+                </div>
+                <p class="contact-intro" data-animate>I'm interested in Senior PM, Product Lead, and Group PM roles &mdash; especially in AI, enterprise platforms, or data-heavy product organizations. Happy to chat about product strategy, new opportunities, or just swap notes on what's working.</p>
+                <div class="contact-grid" data-animate>
+
+                    <a href="mailto:jpradeep.ssn@gmail.com" class="contact-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">jpradeep.ssn@gmail.com</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pradeepkumarj7/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">linkedin.com/in/pradeepkumarj7</span>
+                    </a>
+
+                    <a href="tel:+919566492364" class="contact-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value">+91 9566-492-364</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="footer-copyright">&copy; 2026 Pradeep Kumar Janarthanam</span>
+            <a href="https://www.linkedin.com/in/pradeepkumarj7/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
         </div>
     </footer>
-    
-    <script src="assets/js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootsnav.js"></script>
-    <script src="assets/js/jquery.sticky.js"></script>
-    <script src="assets/js/progressbar.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    
-    <!-- Initialize Custom Awards Carousel -->
-    <script>
-        $(document).ready(function(){
-            $("#awards-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 8000,
-                autoplayHoverPause: true,
-                dots: true,
-                nav: false,
-                margin: 30
-            });
-        });
-    </script>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
